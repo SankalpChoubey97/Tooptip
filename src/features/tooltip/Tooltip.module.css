@@ -1,0 +1,58 @@
+.tooltipWrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  z-index: 1000;
+}
+
+.tooltipButton {
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tooltipText {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Show tooltip on hover */
+.tooltipWrapper:hover .tooltipText {
+  opacity: 1;
+}
+
+/* Positioning classes relative to centered button */
+.left {
+  top: 50%;
+  right: 110%;
+  transform: translateY(-50%);
+}
+
+.right {
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%);
+}
+
+.top {
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom {
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+}
