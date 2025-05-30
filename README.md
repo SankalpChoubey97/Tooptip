@@ -4,5 +4,5 @@ The position prop is set in navbar component and sent to tooltip component, wher
 
 To open this application manually, steps below
 
-npm i(install packages)
-npm run dev(to start application): Open the port provided by this command
+1) npm i(install packages)
+2) npm run dev(to start application): Open the port provided by this command
